@@ -40,7 +40,7 @@ app.get('/status-info', (req, res) => {
     // If the code is not supported, return an error with a helpful message.
     return res.status(400).json({
       error: `Status code ${codeParam} is not recognized. Please use one of the following codes: ${Object.keys(statusMessages).join(', ')}.`
-    });
+    })
   }
 });
 
